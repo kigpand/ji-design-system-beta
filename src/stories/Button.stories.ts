@@ -23,8 +23,12 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    primary: true,
+    $primary: true,
     label: "primary",
+    style: {
+      backgroundColor: "red",
+    },
+    onClick: () => console.log("123"),
   },
 };
 
