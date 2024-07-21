@@ -25,15 +25,26 @@ export const Primary: Story = {
   args: {
     $primary: true,
     label: "primary",
-    style: {
-      backgroundColor: "red",
-    },
-    onClick: () => console.log("123"),
+    onClick: () => console.log("primary"),
   },
 };
 
 export const Secondary: Story = {
   args: {
     label: "secondary",
+    onClick: () => console.log("secondary"),
+  },
+};
+
+export const Custom: Story = {
+  args: {
+    $primary: true,
+    label: "custom",
+    style: {
+      backgroundColor: "skyblue",
+      width: "100px",
+      border: "1px solid blue",
+    },
+    onClick: () => console.log("custom"),
   },
 };
