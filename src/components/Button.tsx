@@ -2,13 +2,15 @@ import styled from "styled-components";
 import { IButtonProps } from "../types/ButtonTypes";
 import { CSSProperties } from "react";
 
-export default function Button(props: IButtonProps) {
+export function Button(props: IButtonProps) {
   return (
     <ButtonStyled {...props} $primary={props.$primary ?? false}>
       {props.label}
     </ButtonStyled>
   );
 }
+
+export default Button;
 
 interface IButtonStyled extends CSSProperties {
   $primary: boolean;
