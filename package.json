@@ -3,6 +3,7 @@
   "description": "Storybook design system",
   "license": "MIT",
   "version": "0.1.0",
+  "main": "dist/index.js",
   "babel": {
     "presets": [
       [
@@ -21,7 +22,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "release": "auto shipit --base-branch=main"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.34",
