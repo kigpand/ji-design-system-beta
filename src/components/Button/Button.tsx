@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { IButtonProps } from "../types/ButtonTypes";
+import { IButtonProps } from "../../types/ButtonTypes";
 import { CSSProperties } from "react";
 
 export function Button(props: IButtonProps) {
