@@ -1,8 +1,8 @@
 {
-  "name": "ji-design",
+  "name": "@ji/desgin-system",
+  "version": "1.0.0",
   "description": "Storybook design system",
   "license": "MIT",
-  "version": "0.8.0",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/types/index.d.ts",

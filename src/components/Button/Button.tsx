@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { CSSProperties } from "react";
 import { IButtonProps } from "@/types/ButtonTypes";
 
-export function Button(props: IButtonProps) {
+function Button(props: IButtonProps) {
   return (
     <ButtonStyled {...props} $primary={props.$primary ?? false}>
       {props.label}
